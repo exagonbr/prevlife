@@ -75,7 +75,7 @@ const Header = (props) => {
                 <Container fluid className="navbar-inner">
                     <Link to="/dashboard" className="navbar-brand">
                         <Logo color={true} />
-                        <h4 className="logo-title">Hope UI</h4>
+                        <h4 className="logo-title">PrevLife</h4>
                     </Link>
                     <div className="sidebar-toggle" data-toggle="sidebar" data-active="true" onClick={minisidebar}>
                         <i className="icon">
@@ -275,8 +275,8 @@ const Header = (props) => {
                                     <img src={avatars6}alt="User-Profile" className="theme-color-yellow-img img-fluid avatar avatar-50 avatar-rounded"/>
                                     <img src={avatars4} alt="User-Profile" className="theme-color-pink-img img-fluid avatar avatar-50 avatar-rounded"/>
                                     <div className="caption ms-3 d-none d-md-block ">
-                                        <h6 className="mb-0 caption-title">Austin Robertson</h6>
-                                        <p className="mb-0 caption-sub-title">Marketing Administrator</p>
+                                        <h6 className="mb-0 caption-title">Dr. Marcelo Novaes</h6>
+                                        <p className="mb-0 caption-sub-title">Médico Especialista</p>
                                     </div>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu  className="dropdown-menu-end" aria-labelledby="navbarDropdown">

@@ -155,7 +155,7 @@ const Index = (props) => {
                             <rect x="19.7783" y="-0.779297" width="50" height="7.14286" rx="3.57143" transform="rotate(45 19.7783 -0.779297)" fill="white"/>
                         </svg>
                         <h1 className="my-4">
-                            <span>Hope ui - Design System</span>
+                            <span>PrevLife</span>
                         </h1>
                         <h4 className="text-white mb-5">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
                         <div className="d-flex justify-content-center align-items-center">
@@ -182,7 +182,7 @@ const Index = (props) => {
                         <Container>
                             <Navbar.Brand href="#" className="mx-2 d-flex align-items-center">
                                 <Logo color={true} />
-                                <h5 className="logo-title mx-3">Hope UI</h5>
+                                <h5 className="logo-title mx-3">PrevLife</h5>
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">

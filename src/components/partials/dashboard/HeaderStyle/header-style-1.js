@@ -37,7 +37,7 @@ const HeaderStyle1 = () => {
                         <Navbar.Brand as="div" className="col-lg-2 col-lg-3 ">
                             <Link to="/dashboard" className="d-flex">
                                 <Logo color={true} />
-                                <h4 className="logo-title">Hope UI</h4>
+                                <h4 className="logo-title">PrevLife</h4>
                             </Link>
                         </Navbar.Brand>
                         <HorizontalNav />
@@ -223,8 +223,8 @@ const HeaderStyle1 = () => {
                                     <img src={avatars6}alt="User-Profile" className="theme-color-yellow-img img-fluid avatar avatar-50 avatar-rounded"/>
                                     <img src={avatars4} alt="User-Profile" className="theme-color-pink-img img-fluid avatar avatar-50 avatar-rounded"/>
                                         <div className="caption ms-3 ">
-                                            <h6 className="mb-0 caption-title">Austin Robertson</h6>
-                                            <p className="mb-0 caption-sub-title">Marketing Administrator</p>
+                                            <h6 className="mb-0 caption-title">Dr. Marcelo Novaes</h6>
+                                            <p className="mb-0 caption-sub-title">Médico Especialista</p>
                                         </div>
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu as="ul" className="dropdown-menu-end">

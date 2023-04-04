@@ -13,6 +13,22 @@
 	width: 100%;
 	object-fit: cover;
 }
+
+.background-video{
+	object-fit: cover;
+	width: 50vw;
+	height: 50vw;
+	top: 0;
+	left: 0;
+}
+
+.imageLogo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-10%, -50%);
+}
+
 .login-bottom {
     margin-top: -12.5rem;
 }

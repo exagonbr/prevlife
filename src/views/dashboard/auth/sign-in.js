@@ -4,11 +4,8 @@ import {Link,useHistory} from 'react-router-dom'
 import Card from '../../../components/Card'
 
 // img
-import facebook    from     '../../../assets/images/brands/fb.svg'
-import google    from     '../../../assets/images/brands/gm.svg'
-import instagram    from     '../../../assets/images/brands/im.svg'
-import linkedin  from     '../../../assets/images/brands/li.svg'
-import auth1 from     '../../../assets/images/auth/01.png'
+import logoPrev from     '../../../assets/images/auth/logo-prev-nobg.png'
+import videoBack from     '../../../assets/images/auth/videoback.mp4'
 
 const SignIn = () => {
    let history =useHistory()
@@ -28,55 +25,35 @@ const SignIn = () => {
                                     <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"/>
                                     <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"/>
                                  </svg>
-                                 <h4 className="logo-title ms-3">Hope UI</h4>
+                                 <h4 className="logo-title ms-3">PrevLife</h4>
                               </Link>
-                              <h2 className="mb-2 text-center">Sign In</h2>
-                              <p className="text-center">Login to stay connected.</p>
+                              <h2 className="mb-2 text-center">Acesso</h2>
+                              <p className="text-center">Bem vindo ao portal PrevLife</p>
                               <Form>
                                  <Row>
                                     <Col lg="12">
                                        <Form.Group className="form-group">
-                                          <Form.Label htmlFor="email" className="">Email</Form.Label>
-                                          <Form.Control type="email" className="" id="email" aria-describedby="email" placeholder=" "/>
+                                          <Form.Label htmlFor="username" className="">Usuário</Form.Label>
+                                          <Form.Control type="username" className="" id="email" aria-describedby="username" placeholder=" "/>
                                        </Form.Group >
                                     </Col>
                                     <Col lg="12" className="">
                                        <Form.Group className="form-group">
-                                          <Form.Label htmlFor="password" className="">Password</Form.Label>
+                                          <Form.Label htmlFor="password" className="">Senha</Form.Label>
                                           <Form.Control type="password" className="" id="password" aria-describedby="password" placeholder=" "/>
                                        </Form.Group>
                                     </Col>
                                     <Col lg="12" className="d-flex justify-content-between">
                                        <Form.Check className="form-check mb-3">
                                           <Form.Check.Input type="checkbox"  id="customCheck1"/>
-                                          <Form.Check.Label htmlFor="customCheck1">Remember Me</Form.Check.Label>
+                                          <Form.Check.Label htmlFor="customCheck1">Lembrar</Form.Check.Label>
                                        </Form.Check>
-                                       <Link to="/auth/recoverpw">Forgot Password?</Link>
+                                       <Link to="/auth/recoverpw">Esqueci a senha</Link>
                                     </Col>
                                  </Row>
                                  <div className="d-flex justify-content-center">
-                                    <Button  onClick={() => history.push('/dashboard')} type="button" variant="btn btn-primary">Sign In</Button>
+                                    <Button  onClick={() => history.push('/dashboard')} type="button" variant="btn btn-primary">Entrar</Button>
                                  </div>
-                                 <p className="text-center my-3">or sign in with other accounts?</p>
-                                 <div className="d-flex justify-content-center">
-                                    <ListGroup as="ul" className="list-group-horizontal list-group-flush">
-                                       <ListGroup.Item as="li"  className="border-0 pb-0">
-                                          <Link to="#"><Image src={facebook} alt="fb"/></Link>
-                                       </ListGroup.Item>
-                                       <ListGroup.Item as="li"  className="border-0 pb-0">
-                                          <Link to="#"><Image src={google} alt="gm"/></Link>
-                                       </ListGroup.Item>
-                                       <ListGroup.Item as="li"  className="border-0 pb-0">
-                                          <Link to="#"><Image src={instagram} alt="im"/></Link>
-                                       </ListGroup.Item>
-                                       <ListGroup.Item as="li"  className="border-0 pb-0">
-                                          <Link to="#"><Image src={linkedin} alt="li"/></Link>
-                                       </ListGroup.Item>
-                                    </ListGroup>
-                                 </div>
-                                 <p className="mt-3 text-center">
-                                    Don’t have an account? <Link to="/auth/sign-up" className="text-underline">Click here to sign up.</Link>
-                                 </p>
                               </Form>
                            </Card.Body>
                         </Card>
@@ -93,8 +70,11 @@ const SignIn = () => {
                      </svg>
                   </div>
                </Col>
-               <Col md="6" className="d-md-block d-none bg-primary p-0 mt-n1 vh-100 overflow-hidden">
-                  <Image src={auth1} className="Image-fluid gradient-main animated-scaleX" alt="images"/>
+               <Col md="6" className="d-md-block d-none p-0 mt-n1 vh-100 overflow-hidden">
+                  <Image src={logoPrev} className="imageLogo"/>
+                  <video className='background-video' autoPlay loop muted>
+                     <source src={videoBack} type='video/mp4' />
+                  </video>
                </Col>
             </Row>
          </section>
