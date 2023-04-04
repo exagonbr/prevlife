@@ -91,7 +91,7 @@ const Header = (props) => {
                                 <path d="M18.0186 18.4851L21.5426 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                             </svg>
                         </span>
-                        <input type="search" className="form-control" placeholder="Search..."/>
+                        <input type="search" className="form-control" placeholder="Busca por protocolo ..."/>
                     </div>
                     <Navbar.Toggle aria-controls="navbarSupportedContent">
                         <span className="navbar-toggler-icon">
